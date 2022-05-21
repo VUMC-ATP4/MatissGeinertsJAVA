@@ -2,7 +2,7 @@ package homework;
 
 public class FirstClass {
     public static void main(String[] args) {
-        System.out.println("THIS IS HOMEWORK: ");
+        System.out.println("\tTHIS IS HOMEWORK: ");
 
         // Valsts apraksts.
 
