@@ -1,8 +1,15 @@
 package homework;
+import java.util.Scanner;
 
 public class FirstClass {
     public static void main(String[] args) {
-        System.out.println("\tTHIS IS HOMEWORK: ");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is your name? ");
+        String name = scanner.nextLine();
+        System.out.println("Hello " + name);
+
+
+        System.out.println("\n\tTHIS IS MY HOMEWORK: ");
 
         // Valsts apraksts.
 
