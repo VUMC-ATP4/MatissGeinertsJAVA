@@ -13,7 +13,7 @@ public class FirstClass {
         String countryOfficialLanguage = "Igauņu valoda";
         boolean isEuropeanMemberState = true;
         char currency = '€';
-        float temperatureEstonia = 8F;
+        float temperatureEstonia = 8.4F;
 
         System.out.println("Valsts nosaukums:" + " " + countryName);
         System.out.println("Iedzīvotāju skaits: " + countryPopulation + " Miljoni");
@@ -60,11 +60,11 @@ public class FirstClass {
         int multiplication = first * second;
         int modulo = second % first;
 
-        System.out.println("Subtraction: 28 - 4 =  " + subtraction);
-        System.out.println("Summa: 28 + 4 = " + summa);
-        System.out.println("Division: 28 / 4 = " + division);
-        System.out.println("Multiplication: 28 * 4  = " + multiplication);
-        System.out.println("Modulo: 4 % 28 = " + modulo);
+        System.out.println("Subtraction: " + first + " - " + second + " = "  + subtraction);
+        System.out.println("Summa: " + first + " + " + second + " = " + summa);
+        System.out.println("Division: " + first + " / " + second + " = " + division);
+        System.out.println("Multiplication: " + first + " * " + second + " = " + multiplication);
+        System.out.println("Modulo: " + second + " % " + first + " = " + modulo);
 
 
 
