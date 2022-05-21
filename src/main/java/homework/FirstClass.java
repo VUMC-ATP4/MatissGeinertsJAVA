@@ -60,11 +60,11 @@ public class FirstClass {
         int multiplication = first * second;
         int modulo = second % first;
 
-        System.out.println("Subtraction = " + subtraction);
-        System.out.println("Summa = " + summa);
-        System.out.println("Division = " + division);
-        System.out.println("Multiplication = " + multiplication);
-        System.out.println("Modulo = " + modulo);
+        System.out.println("Subtraction: 28 - 4 =  " + subtraction);
+        System.out.println("Summa: 28 + 4 = " + summa);
+        System.out.println("Division: 28 / 4 = " + division);
+        System.out.println("Multiplication: 28 * 4  = " + multiplication);
+        System.out.println("Modulo: 4 % 28 = " + modulo);
 
 
 
