@@ -5,8 +5,19 @@ public class HomeworkTwo {
     public static void main(String[] args) {
         logicalExpressions();
         swt();
-//        greatestNumber();
+        greatestNumber();
         ifSent();
+        printBusinessCard();
+        printBusinessCard();
+        printBusinessCard();
+        String card = printBuisnessCardTwo("Matīss ", "Geinerts ", "+371 29971260 ", 1993);
+        String card1 = printBuisnessCardTwo("Kristīne", "Kalniņa", "+371 29999999", 1991);
+        System.out.println("VIZĪTKARTE \n" +  card);
+        System.out.println("VIZĪTKARTE \n" +  card1);
+        int sum = summa(7,9);
+        System.out.println(sum);
+        double ave = avr(14, 5, 3);
+        System.out.println(ave);
 
 
     }
@@ -79,45 +90,70 @@ public class HomeworkTwo {
 
 
     // Trešais uzdevums
-//    static void greatestNumber() {
-//
-//        Scanner scanner = new Scanner(System.in);
-//
-//        System.out.println("Enter first number: ");
-//        int a = scanner.nextInt();
-//        System.out.println("Enter second number: ");
-//        int b = scanner.nextInt();
-//        System.out.println("Enter third number: ");
-//        int c = scanner.nextInt();
-//
-//        int g = Math.max(a, b);
-//        g = Math.max(g, c);
-//
-//        System.out.println("Greatest Number = " + g);
-//
-//    }
+    static void greatestNumber() {
 
+        Scanner scanner = new Scanner(System.in);
 
-    // Ceturtais uzdevums
-    static void ifSent() {  
+        System.out.println("Enter first number: ");
+        int a = scanner.nextInt();
+        System.out.println("Enter second number: ");
+        int b = scanner.nextInt();
+        System.out.println("Enter third number: ");
+        int c = scanner.nextInt();
 
-        String color = "Red";
+        int g = Math.max(a, b);
+        g = Math.max(g, c);
 
-//
-//
-//        if (color.equals("Red") ) {
-//            System.out.println("Nedrīkst šķērsot gājēju pāreju.");
-//        } else if (color.equals("Yellow")){
-//            System.out.println("Gājējs sagatavojas.");
-//        } else if (color.equals("Green")) {
-//            System.out.println("Drīkst šķērsot gājēju pāreju.");
-//        } else {
-//            System.out.println("Ja tomēr luksafors nestrādā, pārliecinies un šķērso pāreju.");
-//        }
-//
+        System.out.println("Greatest Number = " + g);
+
     }
 
 
+    // Ceturtais uzdevums
+    static void ifSent() {
+
+        String color = "Zaļš"; // Sarkans, Dzeltens, Zaļš, Nedeg
 
 
+        if (color.equals("Sarkans") ) {
+            System.out.println("Ja luksaforā deg " + color + " -Nedrīkst šķērsot gājēju pāreju.");
+        } else if (color.equals("Dzeltens")){
+            System.out.println("Ja luksaforā deg " + color + " -Gājējs sagatavojas.");
+        } else if (color.equals("Zaļš")) {
+            System.out.println("Ja luksaforā deg " + color + " -Drīkst šķērsot gājēju pāreju.");
+        } else {
+            System.out.println("Ja tomēr luksafors nestrādā, pārliecinies un šķērso pāreju.");
+        }
+
+    }
+
+    // Piektais uzdevums
+
+static void printBusinessCard() {
+    System.out.println("VIZĪTKARTE");
+    System.out.println("##########");
+    System.out.println("Vārds: Matīss");
+    System.out.println("Uzvārds: Geinerts");
+    System.out.println("Telefona numurs: +371 29971260");
+    System.out.println("Dzimšans gads: 1993");
+    System.out.println("##########");
+}
+
+
+    //Sestais uzdevums
+static String printBuisnessCardTwo(String name, String surname, String telephone, int dateOfBirth) {
+        return "Vārds: " + name + "\nUzvārds: " + surname + "" + "\nTelefona nr: " + telephone + "\nDzimšanas gads: " + dateOfBirth + "\n##########";}
+
+    // Septītais mājas darbs
+
+    static int  summa(int a, int b) {
+        return a+b;
+    }
+
+    // Astotais uzdevums
+
+    static  double avr(double a, double b, double c) {
+        return (a + b + c) / 3;
+
+    }
 }
