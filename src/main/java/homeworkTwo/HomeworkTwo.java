@@ -144,7 +144,7 @@ static void printBusinessCard() {
 static String printBuisnessCardTwo(String name, String surname, String telephone, int dateOfBirth) {
         return "Vārds: " + name + "\nUzvārds: " + surname + "" + "\nTelefona nr: " + telephone + "\nDzimšanas gads: " + dateOfBirth + "\n##########";}
 
-    // Septītais mājas darbs
+    // Septītais uzdevums
 
     static int  summa(int a, int b) {
         return a+b;
