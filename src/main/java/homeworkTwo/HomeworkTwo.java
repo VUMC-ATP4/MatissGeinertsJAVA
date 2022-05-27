@@ -26,9 +26,8 @@ public class HomeworkTwo {
 
     static void logicalExpressions() {
         int x = 9;
-        int x1 = -9;
         System.out.println(x > 0);
-        System.out.println(x1 > 0);
+        System.out.println(x < 0);
         System.out.println(x > 5 && x <= 10);
         System.out.println(!(x <= 5) || x < 10);
         System.out.println(x == 0 || x == 10);
