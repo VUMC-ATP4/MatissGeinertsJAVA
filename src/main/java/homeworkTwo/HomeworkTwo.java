@@ -94,17 +94,17 @@ public class HomeworkTwo {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter first number: ");
+        System.out.println("Ievadi pirmo ciparu:  ");
         int a = scanner.nextInt();
-        System.out.println("Enter second number: ");
+        System.out.println("Ievadi otro ciparu: ");
         int b = scanner.nextInt();
-        System.out.println("Enter third number: ");
+        System.out.println("Ievadi trešo ciparu: ");
         int c = scanner.nextInt();
 
         int g = Math.max(a, b);
         g = Math.max(g, c);
 
-        System.out.println("Greatest Number = " + g);
+        System.out.println("Lielākais cipars = " + g);
 
     }
 
