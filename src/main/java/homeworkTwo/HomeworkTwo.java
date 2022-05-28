@@ -7,6 +7,7 @@ public class HomeworkTwo {
         swt();
         greatestNumber();
         ifSent();
+        ifSent2();
         printBusinessCard();
         printBusinessCard();
         printBusinessCard();
@@ -111,15 +112,36 @@ public class HomeworkTwo {
     // Ceturtais uzdevums
     static void ifSent() {
 
-        String color = "Zaļš"; // Sarkans, Dzeltens, Zaļš, Nedeg
+        String color = "Sarkans"; // Sarkans, Dzeltens, Zaļš, Nedeg
 
 
         if (color.equals("Sarkans") ) {
-            System.out.println("Ja luksaforā deg " + color + " -Nedrīkst šķērsot gājēju pāreju.");
+            System.out.println("Luksaforā deg " + color + " -Nedrīkst šķērsot gājēju pāreju.");
         } else if (color.equals("Dzeltens")){
-            System.out.println("Ja luksaforā deg " + color + " -Gājējs sagatavojas.");
+            System.out.println("Luksaforā deg " + color + " -Gājējs sagatavojas.");
         } else if (color.equals("Zaļš")) {
-            System.out.println("Ja luksaforā deg " + color + " -Drīkst šķērsot gājēju pāreju.");
+            System.out.println("Luksaforā deg " + color + " -Drīkst šķērsot gājēju pāreju.");
+        } else {
+            System.out.println("Esi uzmanīgs! Pārliecinies un tikai tad šķērso!");
+        }
+
+    }
+
+    // Ceturtais uzdevums v2.
+
+    static void ifSent2() {
+
+        String color = "Sarkans"; // Sarkans, Dzeltens, Zaļš, Nedeg
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ievadi luksaforā degošo krāsu!");
+        color = scanner.next();
+
+        if (color.equals("Sarkans") ) {
+            System.out.println("Stāt! Tev ir jāuzgaida līdz iedegsies zaļais!");
+        } else if (color.equals("Dzeltens")){
+            System.out.println("Sagatavojies šķērsot!");
+        } else if (color.equals("Zaļš")) {
+            System.out.println("Tu vari šķērsot! Bet lieka uzmanība nenāks par ļaunu.");
         } else {
             System.out.println("Ja tomēr luksafors nestrādā, pārliecinies un šķērso pāreju.");
         }
