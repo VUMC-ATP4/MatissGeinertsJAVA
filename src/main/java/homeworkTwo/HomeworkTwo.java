@@ -168,7 +168,7 @@ public class HomeworkTwo {
 
     //Sestais uzdevums
     static String printBuisnessCardTwo(String name, String surname, String telephone, int dateOfBirth) {
-        return "Vārds: " + name + "\nUzvārds: " + surname + "" + "\nTelefona nr: " + telephone + "\nDzimšanas gads: " + dateOfBirth + "\n##########";}
+        return "##########" + "\nVārds: " + name + "\nUzvārds: " + surname + "" + "\nTelefona nr: " + telephone + "\nDzimšanas gads: " + dateOfBirth + "\n##########";}
 
     // Septītais uzdevums
 
