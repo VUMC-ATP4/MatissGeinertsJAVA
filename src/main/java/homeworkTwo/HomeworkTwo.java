@@ -112,7 +112,7 @@ public class HomeworkTwo {
     // Ceturtais uzdevums
     static void ifSent() {
 
-        String color = "Sarkans"; // Sarkans, Dzeltens, Zaļš, Nedeg
+        String color = "Dzeltens"; // Sarkans, Dzeltens, Zaļš, Nedeg
 
 
         if (color.equals("Sarkans") ) {
@@ -131,7 +131,7 @@ public class HomeworkTwo {
 
     static void ifSent2() {
 
-        String color = "Sarkans"; // Sarkans, Dzeltens, Zaļš, Nedeg
+        String color;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ievadi luksaforā degošo krāsu!");
         color = scanner.next();
@@ -151,12 +151,17 @@ public class HomeworkTwo {
     // Piektais uzdevums
 
 static void printBusinessCard() {
+        String name = "Matīss";
+        String surname = "Geinerts";
+        String telepohneNumber = "+371 29971260";
+        int age = 1993;
+
     System.out.println("VIZĪTKARTE");
     System.out.println("##########");
-    System.out.println("Vārds: Matīss");
-    System.out.println("Uzvārds: Geinerts");
-    System.out.println("Telefona numurs: +371 29971260");
-    System.out.println("Dzimšans gads: 1993");
+    System.out.println("Vārds: " + name);
+    System.out.println("Uzvārds: " + surname);
+    System.out.println("Telefona numurs: " + telepohneNumber);
+    System.out.println("Dzimšans gads: " +age);
     System.out.println("##########");
 }
 
