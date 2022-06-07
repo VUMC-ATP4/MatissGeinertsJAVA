@@ -11,14 +11,22 @@ public class LoopHomeWork {
         arrays3();
         evenNumber();
         factorial();
+        pin();
+
+
+
 
     }
 
     // Pirmais uzdevums
     static void whileLoop() {
+        Scanner sc = new Scanner(System.in);
 
-        int i = 0;
-        while (i <= 101) {
+        int i;
+        System.out.println("Ievadi veselu skaitli: ");
+        i = sc.nextInt();
+        while (i <= 100) {
+
             System.out.println(i);
             i++;
 
@@ -30,6 +38,7 @@ public class LoopHomeWork {
     static void primeNumber() {
         Scanner scanner = new Scanner(System.in);
         int number;
+        System.out.println("Pirmskaitlis vai tomēr nē? ");
         System.out.println("Ievadi skaitli: ");
         number = scanner.nextInt();
         boolean num = false;
@@ -165,8 +174,24 @@ public class LoopHomeWork {
     }
 
         // Sestais uzdevums
+    static void pin() {
+            Scanner sc = new Scanner(System.in);
+            final int pin = 0000;
+            int attempts = 0;
+            while (attempts <= 2) {
+                System.out.print("Ievadi PIN:  ");
+                if (pin == sc.nextInt()) {
+                    System.out.println("PIN ir pieņemts, laipni lūdzam atpakaļ! ");
+                break;
+            }
+                else if (attempts == 2) {
+                    System.out.println("Atvainojiet, bet jūs esat bloķēts! ");
+                    break;
+                }
+                 else   System.out.println("Nepareizs PIN! Mēģini vēlreiz!");
+                attempts++;
+                }
+        }
 
-    static void pin(){
-        
+
     }
-}
