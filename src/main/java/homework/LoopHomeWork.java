@@ -22,13 +22,12 @@ public class LoopHomeWork {
     static void whileLoop() {
         Scanner sc = new Scanner(System.in);
 
-        int i;
-        System.out.println("Ievadi veselu skaitli: ");
-        i = sc.nextInt();
-        while (i <= 100) {
-
-            System.out.println(i);
-            i++;
+        int i = 0;
+        while (i <= 99) {
+            System.out.println("Ievadi veselu skaitli: ");
+            int z = sc.nextInt();
+            i = i + z;
+            System.out.println("Skaitļu summa ir: " + i);
 
         }
         System.out.println("GATAVS!");
