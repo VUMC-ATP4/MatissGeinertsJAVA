@@ -18,7 +18,7 @@ public class ExtraHomeWork {
                 guess = sc.nextInt();
                 if (guess == x) {
                     System.out.println("Skaitlis atminēts pareizi." +
-                            " \nTava atbilde: " + x + " \nUzminēji ar: " + attempts + ". reizi!");
+                            " \nTava atbilde: " + x + " \nUzminēji ar " + attempts + ". reizi!");
                     break;
 
                 } else if (guess < x)

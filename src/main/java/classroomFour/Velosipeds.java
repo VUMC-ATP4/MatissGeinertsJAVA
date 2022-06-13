@@ -1,16 +1,15 @@
 package classroomFour;
 
 public class Velosipeds {
+    int atrums = 0;
     int atrumi = 21;
-    String nosaukums = "Specialzed";
-    String krasa ="Melns";
+    String nosaukums = "Specialized";
+    String krasa = "Zaļa";
     int svarsGramos;
     double rataIzmers;
-    int atrums = 0;
     String bremzuTips = "";
 
-
-    public void bremze1() {
+    public void bremze() {
         if (bremzuTips.equals("V-veida")) {
             atrums = atrums - 2;
         } else if (bremzuTips.equals("Disku")) {
@@ -20,15 +19,8 @@ public class Velosipeds {
         }
     }
 
-
-    public void bremze(){
-        atrums--;
+    public void spiedPedalus() {
+        atrums = atrums + 5;
     }
-
-    public void spiedPedalus(){
-        atrums++;
-    }
-
-
 
 }
