@@ -1,15 +1,26 @@
 package classroomFour;
 
 public class Rinkis {
-   private final double  PI = 3.14;
-    double radiuss = 4;
+    final double PI = 3.14;
+    double radiuss;
 
-    public double rinkaLaukums(){
-        return PI * (radiuss*radiuss);
+
+    Rinkis(){
+        System.out.println("Veidoju rinķi....");
     }
 
-    public void printetLaukumu(){
-        System.out.println("Riņķa laukums ir: " + rinkaLaukums());
+    Rinkis(double radiuss){
+        System.out.println("Veidoju rinķi ar rādiusu " + radiuss);
+        this.radiuss = radiuss;
     }
+
+    public double rinkaLaukums() {
+        return PI * (radiuss * radiuss);
+    }
+
+    public double diametrs() {
+        return radiuss * 2;
+    }
+
 
 }
