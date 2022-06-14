@@ -2,15 +2,14 @@ package homeworkFour;
 
 
 public class Triangle {
-    double a, b, c;
-    double sabc;
+    public int a, b, c;
 
 
     Triangle() {
         System.out.println("Veidojam pirmo trīsstūra laukumu: ");
     }
 
-    Triangle(double a, double b, double c) {
+    Triangle(int a, int b, int c) {
         System.out.println("Veidojam otro trīsstūra laukumu: ");
         this.a = a;
         this.b = b;
@@ -19,8 +18,13 @@ public class Triangle {
 
 
     public double sabc() {
-        double p = (a + b + c) / 2;
-        return sabc =  Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        double p = pabc();
+        return  Math.sqrt(p * (p - a) * (p - b) * (p - c));
+    }
+
+    private double pabc() {
+        return (double) (a + b + c) / 2.0;
+
     }
 
     public boolean isEquilateral() {
