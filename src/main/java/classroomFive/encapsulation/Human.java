@@ -1,5 +1,10 @@
 package classroomFive.encapsulation;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Human {
     private int age;
     private String name;
@@ -20,27 +25,4 @@ public class Human {
         }
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public void setHeight(double height) {
-        this.height = height;
-    }
 }

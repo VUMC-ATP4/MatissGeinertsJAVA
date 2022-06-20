@@ -1,5 +1,11 @@
 package classroomFive.statika;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+
 public class Car {
 
 
@@ -19,19 +25,5 @@ public class Car {
         System.out.println("Beep beep");
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
 }
