@@ -1,8 +1,5 @@
 package classroomFive.encapsulation;
 
-import lombok.Getter;
-
-
 public class Bird {
     private String name;
     private String colour;
